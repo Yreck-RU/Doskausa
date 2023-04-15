@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Doskausa</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<div class="hint">
+				We tell you how to get the result by placing ads on the bulletin board
+			</div>
+			<header>
+				<div class="header header_home">
+					<div class="container header__flex">
+						<a href="#" class="header__logo hover-transforem">
+							<picture>
+								<source srcset="img/header/Logo-blue.svg" media="(min-width: 921px)">
+								<img src="img/header/Logo-mb.svg" alt="">
+							</picture>
+						</a>
+						<ul class="header__list menu__body">
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Для бизнеса
+								</a>
+							</li>
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Каталоги
+								</a>
+							</li>
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Все сервисы <img src="img/header/grid.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<div class="header__buttons">
+							<a href="" class="header__button hover-transforem">
+								+  Разместить объявление
+							</a>
+							<div class="menu__icon">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section>
+				<div class="index-form index-form__home">
+					<div class="container">
+						<div class="index-form-wrapper">
+							<div class="index-form-wrapper__plug">
+								<h3 class="index-form-wrapper__title">
+									Водители
+								</h3>
+							</div>
+							<form action="" class="index-form-body">
+								<div class="index-form-body__text-input _select" data-state="">
+									<div class="input__wrapper _select__title">
+										<input type="text" name="text-input" placeholder="Поиск по вакансиям" class="_select__title-text _select__title-input" data-default="Option 0">
+									</div>
+									<div class="_select__content">
+										<div class="_select__content-title">
+											Ищут работу
+										</div>
+										<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place0" class="_select__label"><span>Driver</span> - Local</label>
+										<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place1" class="_select__label"><span>Driver</span> - CDL </label>
+										<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place2" class="_select__label"><span>Driver</span> - NO CDL </label>
+										<input id="select-place3" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place3" class="_select__label"><span>Driver</span> - Local</label>
+										<div class="_select__content-title">
+											Вакансии
+										</div>
+										<input id="select-place4" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place4" class="_select__label"><span>Driver</span> - Local</label>
+										<input id="select-place5" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place5" class="_select__label"><span>Driver</span> - CDL </label>
+										<input id="select-place6" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place6" class="_select__label"><span>Driver</span> - NO CDL </label>
+										<input id="select-place7" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place7" class="_select__label"><span>Driver</span> - Local</label>
+									</div>
+								</div>
+
+								<div class="index-form-body__geolocation-input _select" data-state="">
+									<div class="input__wrapper _select__title">
+										<span class="icon-map-pin index-form-body__geolocation-icon"></span>
+										<input type="text" name="geolocation-input" placeholder="Chicago" class="_select__title-text _select__title-input" data-default="Option 0">
+									</div>
+									<div class="_select__content">
+										<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place0" class="_select__label"><span>Chicago</span></label>
+										<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place1" class="_select__label"><span>Denmark</span></label>
+										<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place2" class="_select__label"><span>England</span></label>
+										<input id="select-place3" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place3" class="_select__label"><span>Norway</span></label>
+										<input id="select-place5" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place5" class="_select__label"><span>Wales</span></label>
+										<input id="select-place6" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place6" class="_select__label"><span>United Kingdom</span></label>
+										<input id="select-place7" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place7" class="_select__label"><span>Sweden</span></label>
+									</div>
+								</div>
+								<div class="index-form-body__button">
+									<button>
+										Найти
+									</button>
+								</div>
+							</form>
+							<div class="index-form-wrapper__list">
+								<a href="" class="index-form-wrapper__link social-network-icon__wrapper">
+									<div class="social-network-icon icon-wk">
+										<span class="social-network-icon__number">4</span>
+									</div>
+								</a>
+								<a href="" class="index-form-wrapper__link social-network-icon__wrapper">
+									<div class="social-network-icon icon-tg">
+										<span class="social-network-icon__number">2</span>
+									</div>
+								</a>
+								<div class="index-form-wrapper__list-text">
+									РАБОТА В ЧИКАГО 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="title-blok">
+						<div class="title-blok__bread-crumbs">
+							<a href="#">
+								Чикаго
+							</a>
+							<a href="#">
+								Работа
+							</a>
+							<a href="#">
+								Резюме
+							</a>
+						</div>
+						<h2 class="title-blok__text">
+							Объявления работников “водитель”: в Чикаго 12
+						</h2>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="home-blok">
+					<div class="container">
+						<div class="home-blok__wrapper">
+							<form action="#" class="home-blok-form _home-wrapper">
+								<div class="home-blok-form__button-wrapper _home-button">
+									<div class="home-blok-form__button">
+										<span>Ищу работу</span>
+									</div>
+									<div class="home-blok-form__button">
+										<span>Работники</span>
+									</div>
+								</div>
+								<div class="home-blok-form__wrapper home-blok-form__wrapper_looking-for-job">
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb3" class="_req"> 
+										<label for="rb3">
+											Говорит на английском
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb4" class="_req"> 
+										<label for="rb4">
+											Работает за Cash
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb5" class="_req"> 
+										<label for="rb5">
+											Все категории
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb6" class="_req"> 
+										<label for="rb6">
+											Dry Van
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb7" class="_req"> 
+										<label for="rb7">
+											Reefer
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb8" class="_req"> 
+										<label for="rb8">
+											Drop &Hook
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb9" class="_req"> 
+										<label for="rb9">
+											Stepdeck
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb10" class="_req"> 
+										<label for="rb10">
+											Lowboy
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb11" class="_req"> 
+										<label for="rb11">
+											Автовозозы
+										</label>
+									</div>
+								</div>
+								<div class="home-blok-form__wrapper home-blok-form__wrapper_Employees">
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb12" class="_req"> 
+										<label for="rb12">
+											Говорит на английском
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb13" class="_req"> 
+										<label for="rb13">
+											Работает за Cash
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb14" class="_req"> 
+										<label for="rb14">
+											Все категории
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb15" class="_req"> 
+										<label for="rb15">
+											Dry Van
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb16" class="_req"> 
+										<label for="rb16">
+											Reefer
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb17" class="_req"> 
+										<label for="rb17">
+											Drop &Hook
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb18" class="_req"> 
+										<label for="rb18">
+											Stepdeck
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb19" class="_req"> 
+										<label for="rb19">
+											Lowboy
+										</label>
+									</div>
+									<div class="input input_checkbox">
+										<input type="checkbox" name="rb2" id="rb20" class="_req"> 
+										<label for="rb20">
+											Автовозозы
+										</label>
+									</div>
+								</div>
+							</form>
+							<div class="home-blok__body">
+								<div class="home-blok-blok home-blok-blok_priority">
+									<div class="home-blok-blok__img ibg">
+										<img src="img/home/3.png" alt="">
+									</div>
+									<div class="home-blok-blok__content">
+										<div class="home-blok-blok__title">
+											Мы поможем найти тебе сотрудников на космических скоростях
+										</div>
+										<div class="home-blok-blok__text">
+											bazar.club/
+										</div>
+									</div>
+								</div>
+								<div class="home-blok-blok home-blok-blok_priority">
+									<div class="home-blok-blok__img ibg">
+										<img src="img/home/2.png" alt="">
+									</div>
+									<div class="home-blok-blok__content">
+										<div class="home-blok-blok__title">
+											Требуются водитетели 16FT BOX Truck. Звоните!
+										</div>
+										<div class="home-blok-blok__text">
+											267-523-2221
+										</div>
+									</div>
+								</div>
+								<div class="home-blok-blok">
+									<div class="home-blok-blok__img ibg">
+										<img src="img/home/1.png" alt="">
+									</div>
+									<div class="home-blok-blok__content">
+										<a href="" class="home-blok-blok__title hover-transforem">
+											Водитель
+										</a>
+										<div class="home-blok-blok__number">
+											$550 000
+										</div>
+										<div class="home-blok-blok__sub-title">
+											Мужчина, 34 года, стаж 12 лет, среднее специальное образование
+										</div>
+										<div class="home-blok-blok__text">
+											Ищу постоянную работу или подработку в сфере вождения. Стаж 3 года на тракбоксе.
+										</div>
+										<div class="index-content-blok__foter">
+											<div class="index-content-blok__geolocation">
+												<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+												<p class="index-content-blok__geolocation-text">
+													Chicago
+												</p>
+											</div>
+											<p class="index-content-blok__data">
+												Неделю назад
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="home-blok-blok">
+									<div class="home-blok-blok__img ibg">
+										<img src="img/home/1.png" alt="">
+									</div>
+									<div class="home-blok-blok__content">
+										<a href="" class="home-blok-blok__title hover-transforem">
+											Водитель
+										</a>
+										<div class="home-blok-blok__number">
+											$550 000
+										</div>
+										<div class="home-blok-blok__sub-title">
+											Мужчина, 34 года, стаж 12 лет, среднее специальное образование
+										</div>
+										<div class="home-blok-blok__text">
+											Ищу постоянную работу или подработку в сфере вождения. Стаж 3 года на тракбоксе.
+										</div>
+										<div class="index-content-blok__foter">
+											<div class="index-content-blok__geolocation">
+												<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+												<p class="index-content-blok__geolocation-text">
+													Chicago
+												</p>
+											</div>
+											<p class="index-content-blok__data">
+												Неделю назад
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="home-blok-blok">
+									<div class="home-blok-blok__img ibg">
+										<img src="img/home/1.png" alt="">
+									</div>
+									<div class="home-blok-blok__content">
+										<a href="" class="home-blok-blok__title hover-transforem">
+											Водитель
+										</a>
+										<div class="home-blok-blok__number">
+											$550 000
+										</div>
+										<div class="home-blok-blok__sub-title">
+											Мужчина, 34 года, стаж 12 лет, среднее специальное образование
+										</div>
+										<div class="home-blok-blok__text">
+											Ищу постоянную работу или подработку в сфере вождения. Стаж 3 года на тракбоксе.
+										</div>
+										<div class="index-content-blok__foter">
+											<div class="index-content-blok__geolocation">
+												<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+												<p class="index-content-blok__geolocation-text">
+													Chicago
+												</p>
+											</div>
+											<p class="index-content-blok__data">
+												Неделю назад
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="home-blok-advertising">
+								<div class="home-blok-advertising__img">
+									<span class="ibg">
+										<img src="" alt="">
+									</span>
+								</div>
+								<a href="" class="home-blok-advertising__button hover-transforem">
+									Показать номер
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="js/custom.js"></script>
+	</body>
+</html>

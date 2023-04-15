@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Doskausa</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="header">
+					<div class="container header__container">
+						<a href="#" class="header__logo hover-transforem">
+							<picture>
+								<source srcset="img/header/Logo.svg" media="(min-width: 921px)">
+								<img src="img/header/Logo-mb.svg" alt="">
+							</picture>
+						</a>
+						<ul class="header__list menu__body">
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Для бизнеса
+								</a>
+							</li>
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Каталоги
+								</a>
+							</li>
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Все сервисы <img src="img/header/grid.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<div class="header__buttons">
+							<a href="" class="header__button hover-transforem">
+								+  Разместить объявление
+							</a>
+							<div class="menu__icon">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section>
+				<div class="index-form">
+					<div class="container">
+						<h2 class="index-form__title">
+							Найдите новых <span class="index-form__title_border">сотрудников</span> ,<span class="index-form__title_bacgraund">работу</span> ,<span class="index-form__title_border">жилье</span>  или <span class="index-form__title_border">услуги</span>  - все, что вам нужно, есть на нашей доске объявлений!
+						</h2>
+						<div class="index-form-wrapper">
+							<div class="index-form-wrapper__plug"></div>
+							<form action="" class="index-form-body">
+								<div class="index-form-body__text-input _select" data-state="">
+									<div class="input__wrapper _select__title">
+										<input type="text" name="text-input" placeholder="Поиск по вакансиям" class="_select__title-text _select__title-input" data-default="Option 0">
+									</div>
+									<div class="_select__content">
+										<div class="_select__content-title">
+											Ищут работу
+										</div>
+										<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place0" class="_select__label"><span>Driver</span> - Local</label>
+										<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place1" class="_select__label"><span>Driver</span> - CDL </label>
+										<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place2" class="_select__label"><span>Driver</span> - NO CDL </label>
+										<input id="select-place3" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place3" class="_select__label"><span>Driver</span> - Local</label>
+										<div class="_select__content-title">
+											Вакансии
+										</div>
+										<input id="select-place4" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place4" class="_select__label"><span>Driver</span> - Local</label>
+										<input id="select-place5" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place5" class="_select__label"><span>Driver</span> - CDL </label>
+										<input id="select-place6" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place6" class="_select__label"><span>Driver</span> - NO CDL </label>
+										<input id="select-place7" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place7" class="_select__label"><span>Driver</span> - Local</label>
+									</div>
+								</div>
+
+								<div class="index-form-body__geolocation-input _select" data-state="">
+									<div class="input__wrapper _select__title">
+										<span class="icon-map-pin index-form-body__geolocation-icon"></span>
+										<input type="text" name="geolocation-input" placeholder="Chicago" class="_select__title-text _select__title-input" data-default="Option 0">
+									</div>
+									<div class="_select__content">
+										<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place0" class="_select__label"><span>Chicago</span></label>
+										<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place1" class="_select__label"><span>Denmark</span></label>
+										<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place2" class="_select__label"><span>England</span></label>
+										<input id="select-place3" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place3" class="_select__label"><span>Norway</span></label>
+										<input id="select-place5" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place5" class="_select__label"><span>Wales</span></label>
+										<input id="select-place6" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place6" class="_select__label"><span>United Kingdom</span></label>
+										<input id="select-place7" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place7" class="_select__label"><span>Sweden</span></label>
+									</div>
+								</div>
+								<div class="index-form-body__button">
+									<button>
+										Найти
+									</button>
+								</div>
+							</form>
+							<div class="index-form-wrapper__list">
+								<a href="" class="index-form-wrapper__link social-network-icon__wrapper">
+									<div class="social-network-icon icon-wk">
+										<span class="social-network-icon__number">4</span>
+									</div>
+								</a>
+								<a href="" class="index-form-wrapper__link social-network-icon__wrapper">
+									<div class="social-network-icon icon-tg">
+										<span class="social-network-icon__number">2</span>
+									</div>
+								</a>
+								<div class="index-form-wrapper__list-text">
+									РАБОТА В ЧИКАГО 
+								</div>
+							</div>
+						</div>
+						<div class="index-form__foter">
+							<div class="index-form__foter-plug"></div>
+							<div class="index-form__foter__content">
+								<span>
+									Например
+								</span>
+								<a href="">
+									Truck driver
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="index-content">
+					<div class="container">
+						<h3 class="index-content__title">
+							Рекомендуем для вас
+						</h3>
+						<div class="index-content__body">
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/1.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/2.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/3.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/4.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/5.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/6.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/6.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/6.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="index-content">
+					<div class="container">
+						<h3 class="index-content__title">
+							Услуги
+						</h3>
+						<div class="index-content__body">
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/1.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/2.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/3.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/4.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/5.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/6.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/6.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+							<div class="index-content-blok">
+								<a href="#" class="index-content-blok__img">
+									<span class="ibg">
+										<img src="img/index-content/6.png" alt="">
+									</span>
+								</a>
+								<a href="#" class="index-content-blok__title hover-transforem">
+									Truckdriver
+								</a>
+								<span class="index-content-blok__number">
+									$120
+								</span>
+								<div class="index-content-blok__foter">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										30 марта 9:40 PM
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="js/custom.js"></script>
+	</body>
+</html>

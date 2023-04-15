@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Doskausa</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+		<!--===============================-->
+		<!--css	-->
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<div class="hint hint-flex">
+				<div class="hint-flex__text">
+					Еще не подписаны на наш  Telegram канал? Срочно подпишись! 
+				</div>
+				<a href="#" class="hint-flex__button hover-transforem">
+					Подписаться
+				</a>
+			</div>
+			<header>
+				<div class="header header_home">
+					<div class="container header__flex">
+						<a href="#" class="header__logo hover-transforem">
+							<picture>
+								<source srcset="img/header/Logo-blue.svg" media="(min-width: 921px)">
+								<img src="img/header/Logo-mb.svg" alt="">
+							</picture>
+						</a>
+						<ul class="header__list menu__body">
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Для бизнеса
+								</a>
+							</li>
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Каталоги
+								</a>
+							</li>
+							<li class="header__link">
+								<a href="#" class="hover-transforem">
+									Все сервисы <img src="img/header/grid.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<div class="header__buttons">
+							<a href="" class="header__button hover-transforem">
+								+  Разместить объявление
+							</a>
+							<div class="menu__icon">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section>
+				<div class="index-form index-form__home">
+					<div class="container">
+						<div class="index-form-wrapper">
+							<div class="index-form-wrapper__plug">
+								<h3 class="index-form-wrapper__title">
+									
+								</h3>
+							</div>
+							<form action="" class="index-form-body">
+								<div class="index-form-body__text-input _select" data-state="">
+									<div class="input__wrapper _select__title">
+										<input type="text" name="text-input" placeholder="Поиск по вакансиям" class="_select__title-text _select__title-input" data-default="Option 0">
+									</div>
+									<div class="_select__content">
+										<div class="_select__content-title">
+											Ищут работу
+										</div>
+										<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place0" class="_select__label"><span>Driver</span> - Local</label>
+										<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place1" class="_select__label"><span>Driver</span> - CDL </label>
+										<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place2" class="_select__label"><span>Driver</span> - NO CDL </label>
+										<input id="select-place3" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place3" class="_select__label"><span>Driver</span> - Local</label>
+										<div class="_select__content-title">
+											Вакансии
+										</div>
+										<input id="select-place4" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place4" class="_select__label"><span>Driver</span> - Local</label>
+										<input id="select-place5" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place5" class="_select__label"><span>Driver</span> - CDL </label>
+										<input id="select-place6" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place6" class="_select__label"><span>Driver</span> - NO CDL </label>
+										<input id="select-place7" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place7" class="_select__label"><span>Driver</span> - Local</label>
+									</div>
+								</div>
+
+								<div class="index-form-body__geolocation-input _select" data-state="">
+									<div class="input__wrapper _select__title">
+										<span class="icon-map-pin index-form-body__geolocation-icon"></span>
+										<input type="text" name="geolocation-input" placeholder="Chicago" class="_select__title-text _select__title-input" data-default="Option 0">
+									</div>
+									<div class="_select__content">
+										<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+										<label for="select-place0" class="_select__label"><span>Chicago</span></label>
+										<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place1" class="_select__label"><span>Denmark</span></label>
+										<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place2" class="_select__label"><span>England</span></label>
+										<input id="select-place3" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place3" class="_select__label"><span>Norway</span></label>
+										<input id="select-place5" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place5" class="_select__label"><span>Wales</span></label>
+										<input id="select-place6" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place6" class="_select__label"><span>United Kingdom</span></label>
+										<input id="select-place7" class="_select__input" type="radio" name="singleSelect" />
+										<label for="select-place7" class="_select__label"><span>Sweden</span></label>
+									</div>
+								</div>
+								<div class="index-form-body__button">
+									<button>
+										Найти
+									</button>
+								</div>
+							</form>
+							<div class="index-form-wrapper__list">
+								<a href="" class="index-form-wrapper__link social-network-icon__wrapper">
+									<div class="social-network-icon icon-wk">
+										<span class="social-network-icon__number">4</span>
+									</div>
+								</a>
+								<a href="" class="index-form-wrapper__link social-network-icon__wrapper">
+									<div class="social-network-icon icon-tg">
+										<span class="social-network-icon__number">2</span>
+									</div>
+								</a>
+								<div class="index-form-wrapper__list-text">
+									РАБОТА В ЧИКАГО 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="home-blok">
+					<div class="container">
+						<div class="home-blok__wrapper home-blok__wrapper_slaider">
+							<div class="home-blok-list">
+								<div class="home-blok-list__title">
+									Цена — $1 000
+								</div>
+								<a href="" class="home-blok-list__button hover-transforem">
+									Написать сообщение
+								</a>
+								<a href="" class="home-blok-list__button hover-transforem home-blok-list__button_green">
+									Позвонить
+								</a>
+								<div class="home-blok-list__sub-title">
+									Совместная аренда кабинета
+								</div>
+								<div class="home-blok-list__body">
+									<a href="" class="home-blok-list__link hover-transforem ibg">
+										<img src="img/article/1.jpg" alt="">
+									</a>
+									<a href="" class="home-blok-list__link hover-transforem ibg">
+										<img src="img/article/2.jpg" alt="">
+									</a>
+									<a href="" class="home-blok-list__link hover-transforem ibg">
+										<img src="img/article/3.jpg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="home-blok__body home-blok__body-slaider">
+								<div class="title-blok">
+									<div class="title-blok__bread-crumbs">
+										<a href="#">
+											Чикаго
+										</a>
+										<a href="#">
+											Работа
+										</a>
+										<a href="#">
+											Резюме
+										</a>
+									</div>
+									<h2 class="title-blok__text">
+										Объявления работников “водитель”: в Чикаго 12
+									</h2>
+								</div>
+								<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="home-slaider swiper mySwiper2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+									</div>
+								</div>
+								<div thumbsSlider="" class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+										<div class="swiper-slide">
+											<img src="img/article/6.png" />
+										</div>
+									</div>
+								</div>
+								<div class="index-content-blok__foter index-content-blok__foter_article">
+									<div class="index-content-blok__geolocation">
+										<span class="index-content-blok__geolocation-icon icon-map-pin"></span>
+										<p class="index-content-blok__geolocation-text">
+											Chicago
+										</p>
+									</div>
+									<p class="index-content-blok__data">
+										<span class="index-content-blok__foter_eye icon-eye"></span>
+										23
+									</p>
+								</div>
+								<div class="description-article">
+									<div class="description-article__title">
+										Описание
+									</div>
+									<div class="description-article__text">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nisi nobis ad similique obcaecati magnam repellendus! Atque autem pariatur debitis quas adipisci unde expedita voluptate provident deleniti deserunt distinctio, reiciendis.
+											Accusantium optio quam dignissimos ipsa eius mollitia. Eum deserunt distinctio quam, quae necessitatibus ullam aspernatur, iure quasi facere modi, ducimus, error at delectus cumque? Possimus iusto, a unde nulla inventore!	
+										</p>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus debitis itaque exercitationem corporis quasi ut laudantium, libero dignissimos consequuntur iusto vel perspiciatis modi nam necessitatibus facilis sed pariatur adipisci sapiente!	
+										</p>
+									</div>
+								</div>
+								<div class="article-foter">
+									7 апреля в 23:50 — 23 просмотров (+13 сегодня)
+								</div>
+							</div>
+							<div class="home-blok-advertising home-blok-advertising_article">
+								<div class="home-blok-list__title">
+									Реклама
+								</div>
+								<div class="home-blok-advertising-blok">
+									<div class="home-blok-advertising-blok__img ibg">
+										<img src="img/article/4.png" alt="">
+									</div>
+									<a href="#" class="home-blok-advertising-blok__link hover-transforem">
+										<span class="social-network-icon icon-tg">
+											<span class="social-network-icon__number">7</span>
+										</span>
+										<span class="home-blok-advertising-blok__link_text">Перейти в Telegram</span>
+									</a>
+								</div>
+								<div class="home-blok-advertising-blok">
+									<div class="home-blok-advertising-blok__img ibg">
+										<img src="img/article/5.png" alt="">
+									</div>
+									<a href="#" class="home-blok-advertising-blok__link hover-transforem">
+										<span class="social-network-icon icon-tg">
+											<span class="social-network-icon__number">7</span>
+										</span>
+										<span class="home-blok-advertising-blok__link_text">Перейти в Telegram</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>

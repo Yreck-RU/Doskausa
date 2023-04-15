@@ -50,6 +50,37 @@ if (iconMenu) {
 
 //===============================================================
 
+//Страница Home кнопка формы ========================================================
+
+const homeButton = document.querySelector('._home-button');
+const homeWrapper = document.querySelector('._home-wrapper');
+if (homeButton && homeWrapper) {
+	homeButton.addEventListener("click", function (e) {
+		homeButton.classList.toggle('_active');
+		homeWrapper.classList.toggle('_active');
+	});
+}
+
+//===============================================================
+
+const mySwiper = document.querySelector('.mySwiper');
+const mySwiper2 = document.querySelector('.mySwiper2');
+
+if (mySwiper && mySwiper2) {
+	var swiper = new Swiper(".mySwiper", {
+	  spaceBetween: 10,
+	  slidesPerView: 4,
+	  freeMode: true,
+	  watchSlidesProgress: true,
+	});
+	var swiper2 = new Swiper(".mySwiper2", {
+	  spaceBetween: 10,
+	  thumbs: {
+	    swiper: swiper,
+	  },
+	});
+}
+
 
 //Выподающие списки ===================================================================================
 
