@@ -36,6 +36,7 @@ ibg();
 //Бэграунд картинок - "Конец"
 //==================================================================================================================================================
 
+//Бургер ========================================================
 
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
@@ -46,6 +47,80 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
+//===============================================================
+
+
+//Выподающие списки ===================================================================================
+
+
+const selectSingles = document.querySelectorAll('._select');
+
+if (selectSingles.length > 0) {
+	for (let i = 0; i < selectSingles.length; i++) {
+		let selectSingle = selectSingles[i];
+		let selectSingle_title = selectSingle.querySelector('._select__title');
+		let selectSingle_labels = selectSingle.querySelectorAll('._select__label');
+		let selectSingle_input =  selectSingle.querySelector('._select__title-input');
+		let selectTitleText =  selectSingle.querySelector('._select__title-text');
+
+		if (selectTitleText) {
+
+			selectSingle_title.addEventListener('click', () => {
+			  if ('active' === selectSingle.getAttribute('data-state')) {
+			    selectSingle.setAttribute('data-state', '');
+			  } else {
+			    selectSingle.setAttribute('data-state', 'active');
+			  }
+			});
+
+			for (let i = 0; i < selectSingle_labels.length; i++) {
+			  selectSingle_labels[i].addEventListener('click', (evt) => {
+			    selectSingle_input.value = evt.target.textContent;
+			    selectSingle.setAttribute('data-state', '');
+			  });
+			}
+			document.addEventListener( 'click', (e) => {
+				let withinBoundaries = e.composedPath().includes(selectSingle_title);
+				let withinBoundaries2 = e.composedPath().includes(selectSingle_input);
+			 
+				if ( ! withinBoundaries && ! withinBoundaries2) {
+					selectSingle.setAttribute('data-state', '');
+				}
+			})
+
+		} else {
+			if (selectSingle_title) {
+				selectSingle_title.addEventListener('click', () => {
+					if ('active' === selectSingle.getAttribute('data-state')) {
+						selectSingle.setAttribute('data-state', '');
+					} else {
+						selectSingle.setAttribute('data-state', 'active');
+					}
+				});
+			}
+
+			for (let i = 0; i < selectSingle_labels.length; i++) {
+				selectSingle_labels[i].addEventListener('click', (evt) => {
+					selectSingle_input.value = evt.target.textContent;
+					selectSingle.setAttribute('data-state', '');
+				});
+			}
+
+			document.addEventListener( 'click', (e) => {
+				let withinBoundaries = e.composedPath().includes(selectSingle_title);
+				let withinBoundaries2 = e.composedPath().includes(selectSingle_input);
+			 
+				if ( ! withinBoundaries && ! withinBoundaries2) {
+					selectSingle.setAttribute('data-state', '');
+				}
+			});
+		}
+	}
+}
+
+//=====================================================================================================
+
 
 
 //==================================================================================================================================================
